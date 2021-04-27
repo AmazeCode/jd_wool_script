@@ -146,6 +146,20 @@
 
 - QuantumultX cookie脚本订阅链接: [lxk0301_cookies.conf](https://github.coml499477004/JD-scripts/raw/master/QuantumultX/lxk0301_cookies.conf)
 
+### 4、GitHub action自动运行
+ - 账号信息读取自 Setting -> Secrets
+ **Secrets 填写格式**  
+(1)、新建secret名称为`JD_COOKIE`    
+单账号为(登录京东账号直接找pt_pin和pt_key对应的值)  
+`pt_pin=aaaaaa;pt_key=bbbbbbb;`
+如果需要多账号(换行) 
+```
+pt_pin=aaaaaa;pt_key=bbbbbbb;;
+pt_pin=cccccc;pt_key=ddddddd;
+```
+(2)、新建secret名称为`GIT_CLONE_URL`,值填写自己fork到本地的项目git地址
+(3)、新建secret名称为`PUSH_KEY`,则开启Server酱消息推送服务,值为Server酱值
+
 ## 赞赏码(开发维护不易,请赏杯茶水费)
 
 <div align=center><img width="250" height="250" src="https://raw.githubusercontent.com/l499477004/XXfiVdw99dLsEpUE/master/icon/thanks.jpg"/></div>
