@@ -35,9 +35,26 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
 //下面给出两个账号的填写示例（iOS只支持2个京东账号）
 let shareCodes = [ // IOS本地脚本用户这个列表填入你要助力的好友的shareCode  
                    //账号一的好友shareCode,不同好友的shareCode中间用@符号隔开 
-  'savlhrg5x3lus4ocduqavx6ore@savlhrg5x3lus4ocduqavx6ore@66j4yt3ebl5ierjljoszp7e4izzbzaqhi5k2unz2afwlyqsgnasq@olmijoxgmjutyrsovl2xalt2tbtfmg6sqldcb3q@e7lhibzb3zek27amgsvywffxx7hxgtzstrk2lba@e7lhibzb3zek32e72n4xesxmgc2m76eju62zk3y@l4ex6vx6yynovp6l5zmgzx4nssii54ewecu36gi@l4ex6vx6yynovp6l5zmgzx4nssii54ewecu36gi',
+                   //Dong
+  'olmijoxgmjutya5x4ge5nninkglpceeswgr5jza@5kuvbyio45zwezryhfjh4ua3ob7g24jxsa4ekly@2vgtxj43q3jqyk2ir3svd3mfvjzikfrxjl723vq@e7lhibzb3zek3jyqcy75sz4q4n2y66crmhboqti',
   //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
-  'savlhrg5x3lus4ocduqavx6ore@savlhrg5x3lus4ocduqavx6ore@olmijoxgmjutyx55upqaqxrblt7f3h26dgj2riy@mlrdw3aw26j3wgzjipsxgonaoyr2evrdsifsziyvnsb2r54jq34s64sc4it3jlfnejwmtmsuadax2i@eeexxudqtlampbpvmceutaaht5tcftvr6kohuny@e7lhibzb3zek27gfeceqb6wwm45gshcaroxg5ka@e7lhibzb3zek3xxnrskw4mpzstihpk3f7fqziiy@olmijoxgmjutzhazczrfgf75qrbqseqdmb5ey5a',
+  'e7lhibzb3zek2epdhv3libuhint2ydnoc3f6wlq@5kuvbyio45zwezryhfjh4ua3ob7g24jxsa4ekly@2vgtxj43q3jqyk2ir3svd3mfvjzikfrxjl723vq@e7lhibzb3zek3jyqcy75sz4q4n2y66crmhboqti',
+  // Dong 2
+  'e7lhibzb3zek2epdhv3libuhint2ydnoc3f6wlq@olmijoxgmjutya5x4ge5nninkglpceeswgr5jza@2vgtxj43q3jqyk2ir3svd3mfvjzikfrxjl723vq@e7lhibzb3zek3jyqcy75sz4q4n2y66crmhboqti',
+  // father
+  'e7lhibzb3zek2epdhv3libuhint2ydnoc3f6wlq@olmijoxgmjutya5x4ge5nninkglpceeswgr5jza@5kuvbyio45zwezryhfjh4ua3ob7g24jxsa4ekly@e7lhibzb3zek3jyqcy75sz4q4n2y66crmhboqti',
+  // 当小黑遇上小白
+  'e7lhibzb3zek2epdhv3libuhint2ydnoc3f6wlq@olmijoxgmjutya5x4ge5nninkglpceeswgr5jza@5kuvbyio45zwezryhfjh4ua3ob7g24jxsa4ekly@2vgtxj43q3jqyk2ir3svd3mfvjzikfrxjl723vq',
+  //  small sister
+  'e7lhibzb3zek2epdhv3libuhint2ydnoc3f6wlq@olmijoxgmjutya5x4ge5nninkglpceeswgr5jza@5kuvbyio45zwezryhfjh4ua3ob7g24jxsa4ekly@2vgtxj43q3jqyk2ir3svd3mfvjzikfrxjl723vq@e7lhibzb3zek3jyqcy75sz4q4n2y66crmhboqti',
+  // big sister
+  'e7lhibzb3zek2epdhv3libuhint2ydnoc3f6wlq@olmijoxgmjutya5x4ge5nninkglpceeswgr5jza@5kuvbyio45zwezryhfjh4ua3ob7g24jxsa4ekly@2vgtxj43q3jqyk2ir3svd3mfvjzikfrxjl723vq@e7lhibzb3zek3jyqcy75sz4q4n2y66crmhboqti',
+  // jin ge
+  'e7lhibzb3zek2epdhv3libuhint2ydnoc3f6wlq@olmijoxgmjutya5x4ge5nninkglpceeswgr5jza@5kuvbyio45zwezryhfjh4ua3ob7g24jxsa4ekly@2vgtxj43q3jqyk2ir3svd3mfvjzikfrxjl723vq@e7lhibzb3zek3jyqcy75sz4q4n2y66crmhboqti',
+  // big sister work 189
+  'e7lhibzb3zek2epdhv3libuhint2ydnoc3f6wlq@olmijoxgmjutya5x4ge5nninkglpceeswgr5jza@5kuvbyio45zwezryhfjh4ua3ob7g24jxsa4ekly@2vgtxj43q3jqyk2ir3svd3mfvjzikfrxjl723vq@e7lhibzb3zek3jyqcy75sz4q4n2y66crmhboqti',
+  // big sister work 155
+  'e7lhibzb3zek2epdhv3libuhint2ydnoc3f6wlq@olmijoxgmjutya5x4ge5nninkglpceeswgr5jza@5kuvbyio45zwezryhfjh4ua3ob7g24jxsa4ekly@2vgtxj43q3jqyk2ir3svd3mfvjzikfrxjl723vq@e7lhibzb3zek3jyqcy75sz4q4n2y66crmhboqti'
 ]
 let allMessage = ``;
 let currentRoundId = null;//本期活动id
