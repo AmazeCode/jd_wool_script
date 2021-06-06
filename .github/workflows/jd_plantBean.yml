@@ -9,6 +9,9 @@ on:
     - cron: '0 23,0-13/1 * * *'
   watch:
     types: started
+  push:
+    branches:
+      - master
   repository_dispatch:
     types: pantBean
 jobs:

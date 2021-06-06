@@ -9,6 +9,9 @@ on:
     - cron: '15 23,4,10 * * *'
   watch:
     types: [started]
+  push:
+    branches:
+      - master
   repository_dispatch:
     types: pet
 jobs:
