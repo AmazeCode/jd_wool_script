@@ -39,6 +39,7 @@ let shareCodes = [ // 这个列表填入你要助力的好友的shareCode
   'e0f290656b634dbeab0a0da0747c8140@99efa1431bb54cd8a34aaa90717fa1d8@76abf74ddbf5434ab107cd968e3a77f0@c2109f578a5447b69eb0ea956efa1661@5ac72c51bec24628bdd88d514cd3df58@13ffc68593c54c908502064d23eda3cb@9fe64ff57c1c478084f1baa22c962ed8@17c01bb0afa84dc4a50abca68a3ebace',
   'e0f290656b634dbeab0a0da0747c8140@99efa1431bb54cd8a34aaa90717fa1d8@76abf74ddbf5434ab107cd968e3a77f0@c2109f578a5447b69eb0ea956efa1661@5ac72c51bec24628bdd88d514cd3df58@13ffc68593c54c908502064d23eda3cb@9fe64ff57c1c478084f1baa22c962ed8@17c01bb0afa84dc4a50abca68a3ebace'
 ] 
+
 let message = '', subTitle = '', option = {}, isFruitFinished = false;  
 const retainWater = 100;//保留水滴大于多少g,默认100g; 
 let jdNotify = true;//是否关闭通知，false打开通知推送，true关闭通知推送 
