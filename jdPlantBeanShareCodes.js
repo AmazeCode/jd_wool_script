@@ -15,6 +15,7 @@ let PlantBeanShareCodes = [
   'e7lhibzb3zek2epdhv3libuhint2ydnoc3f6wlq@olmijoxgmjutya5x4ge5nninkglpceeswgr5jza@f5pavyxxlph5opvz3ocqp3phm5ngy42wrc555oy@2vgtxj43q3jqyk2ir3svd3mfvjzikfrxjl723vq@xyymddxmc3bvzcgrhfd63ilgxm@e7lhibzb3zek3jyqcy75sz4q4n2y66crmhboqti',
   'e7lhibzb3zek2epdhv3libuhint2ydnoc3f6wlq@olmijoxgmjutya5x4ge5nninkglpceeswgr5jza@f5pavyxxlph5opvz3ocqp3phm5ngy42wrc555oy@2vgtxj43q3jqyk2ir3svd3mfvjzikfrxjl723vq@xyymddxmc3bvzcgrhfd63ilgxm@e7lhibzb3zek3jyqcy75sz4q4n2y66crmhboqti'
 ]
+
 // 判断github action里面是否有种豆得豆互助码
 if (process.env.PLANT_BEAN_SHARECODES) {
   if (process.env.PLANT_BEAN_SHARECODES.indexOf('&') > -1) {

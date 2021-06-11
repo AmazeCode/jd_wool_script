@@ -52,7 +52,7 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
 const inviteCodes = [
   '',// 账号一助力码
   '' // 账号二助力码
-];
+]
 !(async () => {
   await requireConfig();
   if (!cookiesArr[0]) {

@@ -16,6 +16,7 @@ let FruitShareCodes = [
   'e0f290656b634dbeab0a0da0747c8140@99efa1431bb54cd8a34aaa90717fa1d8@2b0a57da1bd443c6a2baaeb754fa11db@9fe64ff57c1c478084f1baa22c962ed8@17c01bb0afa84dc4a50abca68a3ebace@13ffc68593c54c908502064d23eda3cb@5ac72c51bec24628bdd88d514cd3df58@c2109f578a5447b69eb0ea956efa1661',
   'e0f290656b634dbeab0a0da0747c8140@99efa1431bb54cd8a34aaa90717fa1d8@2b0a57da1bd443c6a2baaeb754fa11db@9fe64ff57c1c478084f1baa22c962ed8@17c01bb0afa84dc4a50abca68a3ebace@13ffc68593c54c908502064d23eda3cb@5ac72c51bec24628bdd88d514cd3df58@c2109f578a5447b69eb0ea956efa1661'
 ]
+
 // 判断github action里面是否有水果互助码
 if (process.env.FRUITSHARECODES) {
   if (process.env.FRUITSHARECODES.indexOf('&') > -1) {
